@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+            width: 300px;
+        }
+
+        input {
+            width: 80%;
+            padding: 8px;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 85%;
+            padding: 10px;
+        }
+
+        label {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <form action="register.php" method="POST">
+        <h2>Register Here</h2>
+        <input type="text" name="first_name" placeholder="First Name" required><br>
+        <input type="text" name="last_name" placeholder="Last Name" required><br>
+        <input type="email" name="email" placeholder="Email ID" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required><br>
+        <label>
+            <input type="checkbox" name="privacy" required> I accept the <a href="#">Privacy Policy</a>
+        </label><br><br>
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+</body>
+</html>
