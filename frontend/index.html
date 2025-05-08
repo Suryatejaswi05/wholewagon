@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wholewagon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="app">
+    <div class="hero-container">
+      <header class="header">
+        <div class="logo"><a href="home.html" id="logo">WHOLEWAGON</a></div>        <!--Need to add link once all the backend is finished-->
+        <div class="search-container">
+          <input type="text" placeholder="Search products..." class="search-input">
+          <button class="search-button">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 128 128">
+              <path fill="#fff" d="M108.9,108.9L108.9,108.9c-2.3,2.3-6.1,2.3-8.5,0L87.7,96.2c-2.3-2.3-2.3-6.1,0-8.5l0,0c2.3-2.3,6.1-2.3,8.5,0l12.7,12.7C111.2,102.8,111.2,106.6,108.9,108.9z"></path><path fill="#fff" d="M52.3 17.299999999999997A35 35 0 1 0 52.3 87.3A35 35 0 1 0 52.3 17.299999999999997Z" transform="rotate(-45.001 52.337 52.338)"></path><path fill="#fff" d="M52.3 17.299999999999997A35 35 0 1 0 52.3 87.3A35 35 0 1 0 52.3 17.299999999999997Z" transform="rotate(-45.001 52.337 52.338)"></path><path fill="#71c2ff" d="M52.3 84.3c-1.7 0-3-1.3-3-3s1.3-3 3-3c6.9 0 13.5-2.7 18.4-7.6 6.4-6.4 9-15.5 6.9-24.4-.4-1.6.6-3.2 2.2-3.6 1.6-.4 3.2.6 3.6 2.2C86 55.8 82.9 67.1 75 75 68.9 81 60.9 84.3 52.3 84.3zM73 35c-.8 0-1.5-.3-2.1-.9L70.7 34c-1.2-1.2-1.2-3.1 0-4.2 1.2-1.2 3.1-1.2 4.2 0l.2.2c1.2 1.2 1.2 3.1 0 4.2C74.5 34.7 73.8 35 73 35z"></path><path fill="#444b54" d="M52.3 90.3c-9.7 0-19.5-3.7-26.9-11.1-14.8-14.8-14.8-38.9 0-53.7 14.8-14.8 38.9-14.8 53.7 0h0C94 40.3 94 64.4 79.2 79.2 71.8 86.6 62.1 90.3 52.3 90.3zM52.3 20.4c-8.2 0-16.4 3.1-22.6 9.4-12.5 12.5-12.5 32.8 0 45.3C42.2 87.4 62.5 87.4 75 75c12.5-12.5 12.5-32.8 0-45.3C68.7 23.5 60.5 20.4 52.3 20.4zM111 98.3L98.3 85.6c-1.7-1.7-4-2.6-6.4- barking-2.6-1.4 0-2.7.3-3.9.9l-2.5-2.5c-1.2-1.2-3.1-1.2-4.2 0-1.2 1.2-1.2 3.1 0 4.2l2.5 2.5c-.6 1.2-.9 2.5-.9 3.9 0 2.4.9 4.7 2.6 6.4L98.3 111c1.8 1.8 4.1 2.6 6.4 2.6s4.6-.9 6.4-2.6l0 0C114.5 107.5 114.5 101.8 111 98.3zM106.8 106.8c-1.2 1.2-3.1 1.2-4.2 0L89.8 94.1c-.6-.6-.9-1.3-.9-2.1s.3-1.6.9-2.1c.6-.6 1.3-.9 2.1-.9s1.6.3 2.1.9l12.7 12.7C108 103.7 108 105.6 106.8 106.8z"></path>
+              </svg>
+          </button>
+        </div>                     
+        <nav class="nav-links">
+          <a href="/">HOME</a>
+          <a href="/">PRODUCTS</a>
+          <a href="/">ABOUT US</a>
+          <a href="/">LOGIN</a>
+        </nav>
+      </header>
+      <div class="hero-content">
+        <h1>Quick and hassle-<br />free shopping</h1>
+        <button class="shop-now-btn">SHOP NOW</button>
+      </div>
+    </div>
+
+    <section class="image-carousel">
+      <h2>Explore Our Collections</h2>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <img src="./images/Home.png" alt="Home Collection"/>
+          <img src="./images/Collections.png" alt="Women's Collection"/>
+          <img src="./images/4.png" alt="Men's Collection"/>
+          <img src="./images/5.png" alt="Accessories"/>
+          <img src="./images/Features.png" alt="Features"/>
+          <img src="./images/Contact.png" alt="Contact"/>
+          <!-- Duplicate images for seamless scrolling -->
+          <img src="./images/Home.png" alt="Home Collection"/>
+          <img src="./images/Collections.png" alt="Women's Collection"/>
+          <img src="./images/4.png" alt="Men's Collection"/>
+          <img src="./images/5.png" alt="Accessories"/>
+          <img src="./images/Features.png" alt="Features"/>
+          <img src="./images/Contact.png" alt="Contact"/>
+        </div>
+      </div>
+    </section>
+
+    <div class="clothes-section">
+      <div class="clothes-image"></div>
+      <div class="clothes-text">
+        <h2>Clothes for Her</h2>
+        <p>Shop for classic or trendy pieces you can wear every day.</p>
+        <button class="shop-now-btn">SHOP NOW</button>
+      </div>
+    </div>
+
+    <section class="clothes-section">
+      <div class="clothes-text">
+        <h2>Clothes for Him</h2>
+        <p>Look dashing while on the go with our casual wear items.</p>
+        <button class="shop-now-btn">SHOP NOW</button>
+      </div>
+      <div class="clothes-image him"></div>
+    </section>
+
+    <section class="accessories-section">
+      <div class="accessories-image"></div>
+      <div class="accessories-text">
+        <h2>Accessories</h2>
+        <p>Add shoes, bags, and more to complement your look.</p>
+        <button class="shop-now-btn">SHOP NOW</button>
+      </div>
+    </section>
+
+    <section class="footwear-section">
+      <div class="footwear-text">
+        <h2>Footwear</h2>
+        <p>Step into style with the perfect pair.</p>
+        <button class="shop-now-btn">SHOP NOW</button>
+      </div>
+      <div class="footwear-image"></div>
+    </section>
+
+    <div class="why-shop-container">
+      <div class="why-shop-image"></div>
+      <div class="why-shop-text">
+        <h2>Why people love to shop at Wholewagon fashion</h2>
+        <ul>
+          <li>Order before 2 pm and get your purchase within the day.</li>
+          <li>Not your size? Avail of our hassle-free return policy.</li>
+          <li>Get 24/7 customer support.</li>
+          <li>We support contactless payment and cash on delivery.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Updated Footer Section with Icons -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>ABOUT</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Careers
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Wholewagon Stories
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Press
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Corporate Information
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>GROUP COMPANIES</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Myntra
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Cleartrip
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Shopsy
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>HELP</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Payments
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Shipping
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Cancellation & Returns
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Sitemap
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Grievance Redressal
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                EPR Compliance
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>CONSUMER POLICY</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Cancellation & Returns
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Terms Of Use
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Security
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Privacy
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Sitemap
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                Grievance Redressal
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#d1b3ff"><path d="M9 5l7 7-7 7"/></svg>
+                EPR Compliance
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Mail Us:</h4>
+          <p>Wholewagon Internet Private Limited,<br>Buildings Alyssa, Begonia &<br>Clove Embassy Tech Village,<br>Outer Ring Road, Devarabeesanahalli Village,<br>Bengaluru, 560103,<br>Karnataka, India</p>
+          <h4>Social:</h4>
+          <div class="social-icons">
+            <a href="#"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#4b0082"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.4 2.86 8.13 6.84 9.44.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85.004 1.71.11 2.52.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.56.83.56 1.67v2.48c0 .27.18.58.69.48A9.963 9.963 0 0022 12c0-5.5-4.46-9.96-9.96-9.96z"/></svg></a>
+            <a href="#"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#4b0082"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11 1-3.55-.18-6.71-1.88-8.82-4.47-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21-.36.1-.74.15-1.13.15-.28 0-.55-.03-.81-.08.55 1.72 2.15 2.97 4.05 3.01-1.48 1.16-3.35 1.85-5.38 1.85-.35 0-.69-.02-1.03-.06 1.91 1.23 4.18 1.94 6.62 1.94 7.95 0 12.29-6.58 12.29-12.29 0-.19 0-.37-.01-.56.84-.6 1.56-1.34 2.14-2.19z"/></svg></a>
+            <a href="#"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#4b0082"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.5c-.97 0-1.75-.78-1.75-1.75s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.5 12.5h-3v-5.5c0-1.31-.47-2.2-1.65-2.2-1.8 0-2.35 1.21-2.35 2.2v5.5h-3v-11h3v1.5c.42-.65 1.17-1.5 2.85-1.5 2.09 0 3.65 1.37 3.65 4.3v6.7z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Registered Office Address:</h4>
+          <p>Wholewagon Internet Private Limited,<br>Buildings Alyssa, Begonia &<br>Clove Embassy Tech Village,<br>Outer Ring Road, Devarabeesanahalli Village,<br>Bengaluru, 560103,<br>Karnataka, India<br>CIN: U51109KA2012PTC066107<br>Telephone: 044-45614700 / 044-67415800</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Become a Seller</a>
+          <a href="#">Advertise</a>
+          <a href="#">Gift Cards</a>
+          <a href="#">Help Center</a>
+        </div>
+        <p>© 2022-2025 Wholewagon.com</p>
+        <div class="payment-icons">
+          <svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 40 24" fill="none"><rect width="40" height="24" rx="4" fill="#003087"/><path d="M18.5 12C18.5 14.4853 16.4853 16.5 14 16.5C11.5147 16.5 9.5 14.4853 9.5 12C9.5 9.51472 11.5147 7.5 14 7.5C16.4853 7.5 18.5 9.51472 18.5 12Z" fill="#F79E1B"/><path d="M30.5 12C30.5 14.4853 28.4853 16.5 26 16.5C23.5147 16.5 21.5 14.4853 21.5 12C21.5 9.51472 23.5147 7.5 26 7.5C28.4853 7.5 30.5 9.51472 30.5 12Z" fill="#FF5F00"/></svg>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
