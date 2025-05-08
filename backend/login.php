@@ -1,17 +1,7 @@
 <?php
 session_start();
 include("db.php"); 
-if (isset($_SESSION['user_id'])) {
-    if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
-        header("Location: admin-panel.php");
-    } else {
-        header("Location: homepage.php");
-    }
-    exit();
-}
-
 $error = "";
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST['email']);
     $password_input = $_POST['password'];
@@ -21,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $res = $stmt->get_result();
-
     if ($res->num_rows === 1) {
         $user = $res->fetch_assoc();
 
@@ -35,8 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("Location: admin-panel.php");
             } else {
                 $_SESSION['role'] = 'user';
-                header("Location: homepage.php");
-            }
+                header("Location: WholeWagon/home.html"); // ✅ correct path
+            }                        
             exit;
         } else {
             $error = "Invalid password.";
