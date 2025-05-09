@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Indigo Theme</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f2f7ff, #e6f0ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      display: flex;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 80%;
+      max-width: 700px;
+      animation: slideIn 1.2s ease;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .form-left {
+      flex: 1;
+      background-color: #4B0082;
+      background-image: url("regs.jpg");
+      background-size: cover;
+      background-position: center;
+      min-height: 500px;
+    }
+
+    .form-right {
+      flex: 1.2;
+      padding: 35px 25px;
+      background: white;
+    }
+
+    .form-right h2 {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .form-right h2 span {
+      display: inline-block;
+      opacity: 0;
+      animation: fadeIn 0.3s forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .form-right h2 span:nth-child(1) { animation-delay: 0s; }
+    .form-right h2 span:nth-child(2) { animation-delay: 0.05s; }
+    .form-right h2 span:nth-child(3) { animation-delay: 0.1s; }
+    .form-right h2 span:nth-child(4) { animation-delay: 0.15s; }
+    .form-right h2 span:nth-child(5) { animation-delay: 0.2s; }
+    .form-right h2 span:nth-child(6) { animation-delay: 0.25s; }
+    .form-right h2 span:nth-child(7) { animation-delay: 0.3s; }
+    .form-right h2 span:nth-child(8) { animation-delay: 0.35s; }
+
+    @keyframes fadeInField {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .form-group,
+    .terms,
+    input[type="submit"] {
+      opacity: 0;
+      animation: fadeInField 0.6s forwards;
+    }
+
+    .seq-1 { animation-delay: 0.2s; }
+    .seq-2 { animation-delay: 0.4s; }
+    .seq-3 { animation-delay: 0.6s; }
+    .seq-4 { animation-delay: 0.8s; }
+    .seq-5 { animation-delay: 1s; }
+    .seq-6 { animation-delay: 1.2s; }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border 0.3s ease;
+    }
+
+    .form-group input:focus {
+      border-color: #4B0082;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(75, 0, 130, 0.2);
+    }
+
+    .terms {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .terms input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.1);
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background: #4B0082;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background: #36006a;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    a {
+      color: #4B0082;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .form-left {
+        height: 180px;
+      }
+
+      .form-left, .form-right {
+        flex: unset;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="form-left"></div>
+  <div class="form-right">
+    <h2>
+      <span>R</span><span>e</span><span>g</span><span>i</span><span>s</span><span>t</span><span>e</span><span>r</span>
+    </h2>
+
+    <form action="register.php" method="post">
+      <div class="form-group seq-1">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="first_name" required>
+      </div>
+
+      <div class="form-group seq-2">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="last_name" required>
+      </div>
+
+      <div class="form-group seq-3">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group seq-4">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="form-group seq-5">
+        <label for="cpassword">Confirm Password</label>
+        <input type="password" id="cpassword" name="confirm_password" required>
+      </div>
+
+      <div class="terms seq-6">
+        <input type="checkbox" name="terms" required>
+        <label>I accept the <a href="#">Terms and Conditions</a></label>
+      </div>
+
+      <input type="submit" value="Register" class="seq-6">
+    </form>
+
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+</div>
+
+</body>
+</html>

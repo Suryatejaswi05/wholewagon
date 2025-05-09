@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Indigo Theme</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f2f7ff, #e6f0ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      display: flex;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 80%;
+      max-width: 700px;
+      animation: slideIn 1.2s ease;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .form-left {
+      flex: 1;
+      background-color: #4B0082;
+      background-image: url("log.jpg"); /* Image updated for login */
+      background-size: cover;
+      background-position: left center;
+      min-height: 500px;
+    }
+
+    .form-right {
+      flex: 1.2;
+      padding: 35px 25px;
+      position: relative;
+      background: white;
+    }
+
+    /* Position the login heading at the top, centered */
+    .form-right h2 {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: #333;
+      display: block;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .form-right h2 span {
+      display: inline-block;
+      opacity: 0;
+      animation: showLetter 0.5s forwards;
+    }
+
+    @keyframes showLetter {
+      0% {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .form-right h2 span:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .form-right h2 span:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    .form-right h2 span:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+    .form-right h2 span:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+    .form-right h2 span:nth-child(5) {
+      animation-delay: 0.4s;
+    }
+    .form-right h2 span:nth-child(6) {
+      animation-delay: 0.5s;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border 0.3s ease;
+    }
+
+    .form-group input:focus {
+      border-color: #4B0082;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(75, 0, 130, 0.2);
+    }
+
+    .form-right input[type="submit"] {
+      width: 100%;
+      background: #4B0082;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .form-right input[type="submit"]:hover {
+      background: #36006a;
+    }
+
+    .form-right p {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .form-right a {
+      color: #4B0082;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .form-left {
+        height: 180px;
+      }
+
+      .form-left,
+      .form-right {
+        flex: unset;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper" data-aos="fade-up">
+  <div class="form-left"></div>
+  <div class="form-right">
+    <!-- Login heading now centered at the top of the form-right -->
+    <h2 data-aos="zoom-in">
+      <span>L</span><span>o</span><span>g</span><span>i</span><span>n</span>
+    </h2>
+
+    <form action="login.php" method="post">
+      <div class="form-group" data-aos="fade-right">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group" data-aos="fade-left">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <input type="submit" value="Login" data-aos="zoom-in">
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+  </div>
+</div>
+
+<!-- AOS Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000 });</script>
+
+</body>
+</html>
